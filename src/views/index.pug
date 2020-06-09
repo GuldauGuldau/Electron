@@ -1,0 +1,16 @@
+extends layouts/default
+include helpers/mixins
+
+block variables
+	- const title = "Electron"
+
+block content
+	include templates/header.pug
+	include templates/info.pug
+	include templates/gallery.pug
+	include templates/comments.pug
+	include templates/footer.pug
+
+block scripts
+	script(src="js/main.js")
+	script(src="js/vendor.js")
