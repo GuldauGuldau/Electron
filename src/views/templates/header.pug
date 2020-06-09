@@ -1,0 +1,22 @@
+header.header
+  div.container
+    div.header-row
+      div.header-col.header-col-row
+        a.header-logo(href="/")
+          img(src="img/svg/logo.svg" alt="Electron")
+        div.search
+          form
+            div.search-group
+              input.search-input(type="text" name="search" placeholder="Поиск" autocomplete="off")
+              img.search-icon(src="img/svg/search.svg" alt="Search")
+      div.header-col
+        div.user
+          div.user-info#showmenu
+            span.user-name Электрон
+            img.user-avatar(src="img/header_avatar.png" alt="avatar")
+            img.user-arrow(src="img/arrow.png" alt="arrow")
+          ul.user-menu
+            li
+              a(href="/") Моя страница
+            li
+              a(href="/") Выйти

@@ -1,0 +1,35 @@
+-
+  var props = [
+    {name:"День рождения", value:"23 сентября 1988 г."},
+    {name:"Семейное положение", value:"женат"},
+    {name:"Образование", value:"ИжГТУ им. М.Т. Калашникова (бывш. ИМИ) '12"},
+    {name:"Веб-сайт", value:"www.web-electron.ru"},
+  ]
+section.info
+  div.container
+    div.info-row
+      div.info-content.box
+        h1.info-title Электрон Вебов
+        div.info-status
+          span#userstatus изменить статус
+          div.info-status-form
+            form#userstatusform
+              input.info-form-input(type="text" name="status" placeholder="введите статус" autocomplete="off" required)
+              button.btn-flat(type="submit") Сохранить
+        div.info-content-body
+          ul.info-props
+            each prop in props
+              li
+                div.info-props-name= prop.name
+                  | :
+                div.info-props-value= prop.value
+          div.info-desc
+            h2.info-desc-title Немного о себе:
+            div.info-desc-text
+              p
+                | С другой стороны новая модель организационной деятельности влечет за собой процесс внедрения и модернизации новых предложений. Товарищи! новая модель организационной деятельности в значительной степени обуславливает создание новых предложений.
+              p Не следует, однако забывать, что укрепление и развитие структуры в значительной степени обуславливает создание систем массового участия.
+              p Идейные соображения высшего порядка, а также постоянное информационно-пропагандистское обеспечение нашей деятельности требуют от нас анализа направлений прогрессивного развития.
+              p Задача организации, в особенности же укрепление и развитие структуры позволяет оценить значение направлений прогрессивного развития.
+      div.info-avatar.box
+        img(src="img/avatar.png" alt="avatar")

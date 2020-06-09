@@ -1,0 +1,35 @@
+section.comments
+  div.container
+    h2.comments-title Записи на вашей стене
+    div.comments-list
+      div.comment.box
+        header.comment-head
+          div.comment-avatar
+            img(src="img/deadpool.png" alt="comment author")
+          div.comment-author
+            h3.comment-author-name Дэдпул Батькович
+            div.comment-time вчера в 16:06
+        div.comment-content
+          | Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым для визуально-слухового восприятия.
+        div.comment-delete 
+          img(src="img/svg/delete.svg")
+      div.comment.box
+        header.comment-head
+          div.comment-avatar
+            img(src="img/logan.png" alt="comment author")
+          div.comment-author
+            h3.comment-author-name Рассомаха Логинович
+            div.comment-time вчера в 16:06
+        div.comment-content
+          | Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым для визуально-слухового восприятия.
+        div.comment-delete
+          img(src="img/svg/delete.svg")
+    div.comments-form
+      form.form#commentform
+        h2.form-title Добавить запись
+        div.form-group
+          input.form-input.box(type="text" name="name" placeholder="Ваше имя" autocomplete="off" required)
+        div.form-group
+          textarea.form-input.form-textarea.box(name="message" placeholder="Текст записи..." rows="5" required)
+        div.form-action
+          button.btn-default(type="submit") Отправить
