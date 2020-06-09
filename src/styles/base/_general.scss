@@ -1,0 +1,33 @@
+:root {
+    --primary-color: #278ece;
+    --text-color: #333333;
+    --text-color-light: #999999;
+    --border-color: #e8e8e8;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+}
+
+h1, h2, h3, h4, h5, h6, ul {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    @include container();
+    @include md(max-width, 100%);
+    @include lg(max-width, rem(930));
+    @include xl(max-width, rem(1110));
+}
+body {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+    color: var(--text-color);
+    font-weight: 400;
+    line-height: 1.4;
+    -webkit-font-smoothing: antialiased;
+    min-width: 320px;
+    overflow-x: hidden;
+}
