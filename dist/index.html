@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Electron</title>
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+    <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-row">
+          <div class="header-col header-col-row"><a class="header-logo" href="/"><img src="img/svg/logo.svg" alt="Electron"></a>
+            <div class="search">
+              <form>
+                <div class="search-group">
+                  <input class="search-input" type="text" name="search" placeholder="Поиск" autocomplete="off"><img class="search-icon" src="img/svg/search.svg" alt="Search">
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="header-col">
+            <div class="user">
+              <div class="user-info" id="showmenu"><span class="user-name">Электрон</span><img class="user-avatar" src="img/header_avatar.png" alt="avatar"><img class="user-arrow" src="img/arrow.png" alt="arrow"></div>
+              <ul class="user-menu">
+                <li><a href="/">Моя страница</a></li>
+                <li><a href="/">Выйти</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="info">
+      <div class="container">
+        <div class="info-row">
+          <div class="info-content box">
+            <h1 class="info-title">Электрон Вебов</h1>
+            <div class="info-status"><span id="userstatus">изменить статус</span>
+              <div class="info-status-form">
+                <form id="userstatusform">
+                  <input class="info-form-input" type="text" name="status" placeholder="введите статус" autocomplete="off" required>
+                  <button class="btn-flat" type="submit">Сохранить</button>
+                </form>
+              </div>
+            </div>
+            <div class="info-content-body">
+              <ul class="info-props">
+                <li>
+                  <div class="info-props-name">День рождения:</div>
+                  <div class="info-props-value">23 сентября 1988 г.</div>
+                </li>
+                <li>
+                  <div class="info-props-name">Семейное положение:</div>
+                  <div class="info-props-value">женат</div>
+                </li>
+                <li>
+                  <div class="info-props-name">Образование:</div>
+                  <div class="info-props-value">ИжГТУ им. М.Т. Калашникова (бывш. ИМИ) '12</div>
+                </li>
+                <li>
+                  <div class="info-props-name">Веб-сайт:</div>
+                  <div class="info-props-value">www.web-electron.ru</div>
+                </li>
+              </ul>
+              <div class="info-desc">
+                <h2 class="info-desc-title">Немного о себе:</h2>
+                <div class="info-desc-text">
+                  <p>С другой стороны новая модель организационной деятельности влечет за собой процесс внедрения и модернизации новых предложений. Товарищи! новая модель организационной деятельности в значительной степени обуславливает создание новых предложений.</p>
+                  <p>Не следует, однако забывать, что укрепление и развитие структуры в значительной степени обуславливает создание систем массового участия.</p>
+                  <p>Идейные соображения высшего порядка, а также постоянное информационно-пропагандистское обеспечение нашей деятельности требуют от нас анализа направлений прогрессивного развития.</p>
+                  <p>Задача организации, в особенности же укрепление и развитие структуры позволяет оценить значение направлений прогрессивного развития.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="info-avatar box"><img src="img/avatar.png" alt="avatar"></div>
+        </div>
+      </div>
+    </section>
+    <section class="gallery">
+      <div class="container">
+        <div class="gallery-box box">
+          <h2 class="gallery-title">Фотографии Электрона</h2>
+          <div class="gallery-body">
+            <div class="gallery-wrap">
+              <div class="gallery-row">
+                <div class="gallery-item"><img src="img/photo_1.jpg" alt="gallery"></div>
+                <div class="gallery-item"><img src="img/photo_2.jpg" alt="gallery"></div>
+                <div class="gallery-item"><img src="img/photo_3.jpg" alt="gallery"></div>
+                <div class="gallery-item"><img src="img/photo_4.jpg" alt="gallery"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="comments">
+      <div class="container">
+        <h2 class="comments-title">Записи на вашей стене</h2>
+        <div class="comments-list">
+
+        </div>
+        <div class="comments-form">
+          <form class="form" id="commentform">
+            <h2 class="form-title">Добавить запись</h2>
+            <div class="form-group">
+              <input class="form-input box" type="text" name="name" placeholder="Ваше имя" autocomplete="off" required>
+            </div>
+            <div class="form-group">
+              <textarea class="form-input form-textarea box" name="message" placeholder="Текст записи..." rows="5" required></textarea>
+            </div>
+            <div class="form-action">
+              <button class="btn-default" type="submit">Отправить</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-copyright">elbook 2018</div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/common.js"></script>
+  </body>
+</html>
